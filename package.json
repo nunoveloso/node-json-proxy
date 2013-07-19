@@ -1,0 +1,15 @@
+{
+  "name" : "json-proxy",
+  "version" : "0.0.1",
+  "author": "Nuno Veloso <nunoveloso18@gmail.com>",
+  "description": "A simple JSON proxy to wrap remote JSON URLSs to be served by localhost.",
+  "scripts": {
+    "start": "node app.js",
+  },
+  "keywords": [
+    "json",
+    "proxy",
+    "localhost"
+  ],
+  "license": "MIT"
+}
