@@ -1,6 +1,12 @@
+/**
+ * @file
+ * Main app file that will create a (default: localhost) proxy to wrap remote JSON requests.
+ *
+ * @author (nunoveloso18@gmail.com)
+ */
+
 
 var http = require('http')
-  , url = require('url')
   , fs = require('fs')
   , config = {
 			hostname : '127.0.0.1',
