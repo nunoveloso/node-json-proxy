@@ -35,7 +35,11 @@ fs.exists(config_path, function(exists) {
 })
 
 
-
+/**
+ * Does the actual job: proxies remote JSON response to set hostname.
+ * @param req node [Object]
+ * @param res node [Object]
+ */
 function json_proxy(req, res) {
 
 	var requested_url = decodeURIComponent(req.url.replace(/^\//, ''))
