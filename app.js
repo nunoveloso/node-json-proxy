@@ -58,9 +58,15 @@ function json_proxy(req, res) {
 
 			// once we are done with their response, we send it
 			response.on('end', function() {
-				console.log('response ends')
+				console.log('Response has been buffered.')
 
-				res.end(JSON.stringify(JSON.parse(buffer.toString()), false))
+				try {
+				  // var json = JSON.parse(this.responseText)
+				  res.end(JSON.stringify(JSON.parse(buffer.toString()), false))
+				}
+				catch(e) {
+				  console.log('Remote "' + requested_url + '" sent and invalid JSON, skipping.')
+				}
 			})
 		})
 		// handle errors
