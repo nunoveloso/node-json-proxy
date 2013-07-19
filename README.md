@@ -5,7 +5,7 @@ Node.js server that proxies remote JSON requests to localhost (or any given host
 
 # Usage
 
-Run the app:
+Run the server:
 ```
 $ node app.js
 ```
